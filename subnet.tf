@@ -1,4 +1,4 @@
-resource "aws_subnet" "public" {
+resource "aws_subnet" "public-1" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.1.0/24"
 
@@ -9,7 +9,7 @@ resource "aws_subnet" "public" {
     Dept       = "${var.Dept}"
   }
 }
-resource "aws_subnet" "public" {
+resource "aws_subnet" "public-2" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.2.0/24"
 
@@ -20,7 +20,7 @@ resource "aws_subnet" "public" {
     Dept       = "${var.Dept}"
   }
 }
-resource "aws_subnet" "public" {
+resource "aws_subnet" "public-3" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.3.0/24"
 
@@ -32,7 +32,7 @@ resource "aws_subnet" "public" {
   }
 }
 
-resource "aws_subnet" "private" {
+resource "aws_subnet" "private-11" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.11.0/24"
 
@@ -43,7 +43,7 @@ resource "aws_subnet" "private" {
     Dept       = "${var.Dept}"
   }
 }
-resource "aws_subnet" "private" {
+resource "aws_subnet" "private-12" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.12.0/24"
 
@@ -54,7 +54,7 @@ resource "aws_subnet" "private" {
     Dept       = "${var.Dept}"
   }
 }
-resource "aws_subnet" "private" {
+resource "aws_subnet" "private-13" {
   vpc_id     = "${aws_vpc.dev.id}"
   cidr_block = "10.0.13.0/24"
 
